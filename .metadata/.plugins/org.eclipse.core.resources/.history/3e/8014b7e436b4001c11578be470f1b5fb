@@ -1,0 +1,22 @@
+package calculadora.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import calc.Calculadora;
+
+class TestSum {
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		Calculadora calculadora = new Calculadora();
+	}
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

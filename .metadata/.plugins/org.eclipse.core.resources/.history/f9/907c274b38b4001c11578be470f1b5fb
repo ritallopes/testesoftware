@@ -1,0 +1,26 @@
+package calculadora.test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import calc.Calculadora;
+
+class TestSum {
+	static Calculadora calculadora;
+	@BeforeAll
+	static void setUpBeforeAll() throws Exception {
+		calculadora = new Calculadora();
+	}
+
+	@Test
+	void somarPositivos() {
+		assertEquals(calculadora.somar(23, 27), 50);
+		assertEquals(calculadora.somar(-23, -27), -50);
+		assertEquals(calculadora.somar(-23, 27), 4);
+		assertEquals(calculadora.somar(1.4, 1.6), 3);
+	}
+	
+
+}

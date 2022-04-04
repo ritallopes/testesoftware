@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author rita.lopes.705
+ *
+ */
+module calculadora {
+	requires org.junit.jupiter.api;
+}

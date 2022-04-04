@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestSum" project="calculadora" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="calculadora.test.TestSum" time="0.034" displayname="TestSum" uniqueid="[engine:junit-jupiter]/[class:calculadora.test.TestSum]">
+    <testcase name="somarPositivos" classname="calculadora.test.TestSum" time="0.029" displayname="somarPositivos()" uniqueid="[engine:junit-jupiter]/[class:calculadora.test.TestSum]/[method:somarPositivos()]"/>
+    <testcase name="somarNegativos" classname="calculadora.test.TestSum" time="0.002" displayname="somarNegativos()" uniqueid="[engine:junit-jupiter]/[class:calculadora.test.TestSum]/[method:somarNegativos()]"/>
+  </testsuite>
+</testrun>

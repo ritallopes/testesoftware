@@ -1,0 +1,20 @@
+package calculadora.test;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import calc.Calculadora;
+
+class TestSum {
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+		Calculadora calculadora = new Calculadora();
+	}
+
+	@Test
+	void somarDoisPositivos() {
+		fail("Not yet implemented");
+	}
+
+}
