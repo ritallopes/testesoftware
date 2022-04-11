@@ -20,9 +20,9 @@ public class TestConta {
 			e.printStackTrace();
 		}
 		
-		Conta c2 = new Conta("b", 2000);
+		c1 = new Conta("b", 2000);
 		try {
-			c2.creditar(-1000);
+			c1.creditar(-1000);
 			fail("não deve ser possível creditar valores negativos");
 		} catch (OperacaoIlegalException e) {
 			// TODO Auto-generated catch block
@@ -41,17 +41,17 @@ public class TestConta {
 			e.printStackTrace();
 		}
 		
-		Conta c2 = new Conta("b", 2000);
+		c1 = new Conta("b", 2000);
 		try {
-			c2.debitar(-1000);
+			c1.debitar(-1000);
 			fail("não deve ser possível debitar valores negativos");
 		} catch (OperacaoIlegalException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Conta c3 = new Conta("c", 2000);
+		c1 = new Conta("c", 2000);
 		try {
-			c2.debitar(2001.00);
+			c1.debitar(2001.00);
 			fail("não deve ser possível debitar valor acima do saldo");
 		} catch (OperacaoIlegalException e) {
 			// TODO Auto-generated catch block
