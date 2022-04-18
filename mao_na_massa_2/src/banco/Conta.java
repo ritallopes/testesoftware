@@ -20,8 +20,7 @@ public class Conta {
 	} 
 
 	public double debitar (double valor) throws OperacaoIlegalException {
-		
-		if( valor > 0 ){
+		if( valor > 0 && valor <=saldo){
 	         saldo = saldo-valor; 
 	    }
 		else{
@@ -34,7 +33,7 @@ public class Conta {
 
 	public double creditar (double valor) throws OperacaoIlegalException {
 		
-		if(valor > 0 & valor <= saldo){
+		if(valor > 0){
 	         saldo = saldo+valor; 
 	    }
 		else{
