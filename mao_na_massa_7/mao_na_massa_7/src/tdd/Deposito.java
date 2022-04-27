@@ -17,5 +17,9 @@ public class Deposito {
 	public String data() {
 		return data;
 	}
+	@Override
+	public String toString() {
+		return data+"\tDeposito\t$"+valor+"\n";
+	}
 
 }
