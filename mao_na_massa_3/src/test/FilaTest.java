@@ -12,10 +12,10 @@ public class FilaTest {
 
 	@Test
 	public void testVazia() {
-		Fila fila = new Fila(1);
+		Fila fila = new Fila();
 		try {
 			fila.removeDaFila();
-			fail("Não deve ser possível remover de fila vazia");
+			fail("Nï¿½o deve ser possï¿½vel remover de fila vazia");
 		}catch(FilaVaziaException e) {
 			e.printStackTrace();
 		}
@@ -27,7 +27,7 @@ public class FilaTest {
 		try {
 			fila.insereNaFila("Primeiro");
 			fila.insereNaFila("Segundo");
-			fail("Não deve ser possível inserir na fila cheia");
+			fail("Nï¿½o deve ser possï¿½vel inserir na fila cheia");
 		}catch(FilaCheiaException e) {
 			e.printStackTrace();
 		}
@@ -38,11 +38,11 @@ public class FilaTest {
 		try {
 			fila.insereNaFila("Primeiro");
 			fila.insereNaFila("Segundo");
-			fila.insereNaFila("Último");
+			fila.insereNaFila("ï¿½ltimo");
 			assertEquals("Primeiro", fila.getItem(0));
-			assertEquals("Último", fila.getItem(fila.getFim()));
+			assertEquals("ï¿½ltimo", fila.getItem(fila.getFim()));
 		}catch (Exception e){
-			fail("Algo errado! Exceção lançada.");	
+			fail("Algo errado! Exceï¿½ï¿½o lanï¿½ada.");	
 			e.printStackTrace();
 		}
 	}
@@ -51,14 +51,22 @@ public class FilaTest {
 		Fila fila = new Fila(3);
 		fila.insereNaFila("Primeiro");
 		fila.insereNaFila("Segundo");
-		fila.insereNaFila("Último");
+		fila.insereNaFila("ï¿½ltimo");
 		try {
 			assertEquals("Primeiro", fila.removeDaFila());
 			assertEquals("Segundo", fila.getItem(0));
-			assertEquals("Último", fila.getItem(fila.getFim()));
+			assertEquals("ï¿½ltimo", fila.getItem(fila.getFim()));
 		}catch (Exception e){
-			fail("Algo errado! Exceção lançada.");	
+			fail("Algo errado! Exceï¿½ï¿½o lanï¿½ada.");	
 			e.printStackTrace();
 		}
+	}
+	@Test
+	public void testLimpaFila() {
+		Fila fila = new Fila(3);
+		fila.insereNaFila("Primeiro");
+		fila.insereNaFila("Segundo");
+		fila.insereNaFila("Ãšltimo");
+		assertEquals(fila.tamanho(), -1);
 	}
 }

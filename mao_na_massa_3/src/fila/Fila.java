@@ -11,10 +11,6 @@ public class Fila implements IFila {
 		return fim;
 	}
 
-	public void setFim(int fim) {
-		this.fim = fim;
-	}
-
 	public int getTam() {
 		return tam;
 	}

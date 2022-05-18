@@ -45,7 +45,14 @@ class TestCalculadora {
 	@Test
 	void PotTest() {
 		assertEquals(calculadora.potenciar(2),4);
-		assertEquals(calculadora.potenciar(-2), 2);
+		assertEquals(calculadora.potenciar(-2),4);
 	}
-
+	@Test
+	void RadTest() {
+		assertEquals(calculadora.radical(4, 2), 2);
+	}
+	@Test
+	void InvTest() {
+		assertEquals(calculadora.inverter(2),0.5, 0.1);
+	}
 }
