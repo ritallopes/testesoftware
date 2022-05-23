@@ -67,6 +67,7 @@ public class FilaTest {
 		fila.insereNaFila("Primeiro");
 		fila.insereNaFila("Segundo");
 		fila.insereNaFila("Último");
+		fila.limpaFila();
 		assertEquals(fila.tamanho(), -1);
 	}
 }
