@@ -31,5 +31,6 @@ public class CalculoImpostoRendaTest {
 	 public void test() {
 		 assertEquals(esperado, CalculoImpostoRenda.calculaImposto(entrada),0);
 	 }
+	 
 
 }
