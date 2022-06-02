@@ -32,5 +32,12 @@ public class CalculoImpostoRendaTest {
 		 assertEquals(esperado, CalculoImpostoRenda.calculaImposto(entrada),0);
 	 }
 	 
+	 @Test
+	 public void testConstructor() {
+		 CalculoImpostoRenda calculo = new CalculoImpostoRenda();
+		 String [] args = {"arg1", "arg1"};
+		 calculo.main(args);
+	 }
+	 
 
 }

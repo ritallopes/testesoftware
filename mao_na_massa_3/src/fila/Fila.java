@@ -47,14 +47,14 @@ public class Fila implements IFila {
 		fim++;
 		if(estaCheia()) {
 			fim--;
-			throw new FilaCheiaException();
+			throw new FilaCheiaException("Fila cheia");
 		}
 		Fila[fim] = obj;
 	}
 
 	public Object removeDaFila() throws FilaVaziaException {
 		if(estaVazia()) {
-			throw new FilaVaziaException();
+			throw new FilaVaziaException("Fila vazia");
 		}
 		Object item = Fila[0];
 		for(int k = 1; k <= fim; k++) {

@@ -70,4 +70,14 @@ public class FilaTest {
 		fila.limpaFila();
 		assertEquals(fila.tamanho(), -1);
 	}
+	@Test
+	public void testTamFila() {
+		Fila fila = new Fila(1);
+		assertEquals(fila.getTam(), 1);
+	}
+	@Test
+	public void testCapacidadeFila() {
+		Fila fila = new Fila();
+		assertEquals(fila.getCapacidade(), 5);
+	}
 }
