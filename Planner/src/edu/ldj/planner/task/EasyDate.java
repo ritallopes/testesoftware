@@ -125,7 +125,7 @@ public class EasyDate {
 		for( int i = 0; i < num; i++ ) {
 			day++;
 			if ( day > getMonthDays() ) {
-				day = 0;
+				day = 1;//erro aqui - antes:day = 1;
 				month++;
 			}
 			if ( month > 12 ) {

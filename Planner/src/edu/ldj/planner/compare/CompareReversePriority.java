@@ -17,7 +17,7 @@ public class CompareReversePriority< T extends Task > implements Comparator< T >
 	 */
 	@Override
 	public int compare(T task1, T task2) {
-		return -1 * ( task2.getPriority() - task1.getPriority() );
+		return -1 * ( task1.getPriority() - task2.getPriority() );
 	}
 
 }

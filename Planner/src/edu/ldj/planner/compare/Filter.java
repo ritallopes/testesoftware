@@ -54,6 +54,7 @@ public class Filter {
 	 */
 	public boolean meetsFilter( Task t ) {
 		boolean success = true;
+		System.out.println();
 		if ( priorityMin != null && !( t.getPriority() >= priorityMin.intValue() ) )
 			success = false;
 		if ( priorityMax != null && !( t.getPriority() <= priorityMax.intValue() ) )
